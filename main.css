@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+}
+
+.container .heading{
+width: 50%;
+padding-bottom: 50px;
+}
+.container .heading h3{
+  font-size: 3em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #222;
+}
+.container .heading h3 span{
+  font-weight: 20;
+  color: grey;
+}
+
+.container .box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container .box .sweet{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+.container .box .sweet img{
+  width: 100%;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+.container .btn{
+  margin: 40px 0 70px 0;
+  background: #222;
+  padding: 15px 40px;
+  border-radius: 5px;
+}
+.container .btn a{
+  color: #ccc;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+.footer-basic {
+  padding:10px 0;
+  background-color:#130f0f;
+  color:#ccc;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#f5f2f2;
+  margin-bottom:0;
+}
+
+@media only screen and (max-width: 769px){
+  .container .box{
+    flex-direction: column;
+  }
+  .container .box .sweet{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 643px){
+  .container .heading{
+    width: 100%;
+  }
+  .container .heading h3{
+    font-size: 1em;
+  }
+}
